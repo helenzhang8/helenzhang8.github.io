@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/xtn1kvy.css">
+    <link rel="stylesheet" href="portfolio.css">
+
+    <title>Helen Zhang ♡ Art</title>
+
+
+  </head>
+  <body>
+    <nav id="nav" class="navbar navbar-fixed-top fixed-top navbar-expand">
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown mx-3">
+            <span class="nav-link" onclick="transitionToPage('home.html')" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              work
+            </span>
+            <div id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('brown.html')">brown dining services</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('hotplate.html')">hotplate</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('fruit.html')">fruit</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('hotsauce.html')">hotsauce</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('cactus.html')">cactus</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('instant.html')">instant</span>
+            </div>
+          </li>
+          <li class="nav-item dropdown mx-3">
+            <span class="nav-link active-dropdown" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              art
+            </span>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('digital.html')">digital</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('lettering.html')">lettering</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('social.html')">social</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('paper.html')">paper</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('clay.html')">clay</span>
+            </div>
+          </li>
+          <li class="nav-item dropdown mx-3">
+              <span class="nav-link" onclick="transitionToPage('about.html')" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                about
+              </span>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a id="dropdown-item" class="dropdown-item" href="./resume.pdf">resume</a>
+                <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('contact.html')">contact</span>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section id="jumbo-link" class="jumbotron digital rounded-0 text-center" onclick="transitionToPage('digital.html')">
+        <div class="container">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h0 class="underlined underlined--thick">Digital</h0>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+      </section>
+
+      <section id="jumbo-link" class="jumbotron lettering rounded-0 text-center" onclick="transitionToPage('lettering.html')">
+        <div class="container">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h0 class="underlined underlined--thick">Lettering</h0>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+      </section>
+
+      <section id="jumbo-link" class="jumbotron social rounded-0 text-center" onclick="transitionToPage('social.html')">
+        <div class="container">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h0 class="underlined underlined--thick">Social</h0>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+      </section>
+
+      <section id="jumbo-link" class="jumbotron paper rounded-0 text-center" onclick="transitionToPage('paper.html')">
+        <div class="container">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h0 class="underlined underlined--thick">Paper</h0>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+      </section>
+
+      <section id="jumbo-link" class="jumbotron clay rounded-0 text-center" onclick="transitionToPage('clay.html')">
+        <div class="container">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h0 class="underlined underlined--thick">Clay</h0>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+      </section>
+
+    </main>
+
+<script>
+  document.querySelector('body').style.opacity = 1
+  window.addEventListener( "pageshow", function ( event ) {
+var historyTraversal = event.persisted ||
+                     ( typeof window.performance != "undefined" &&
+                          window.performance.navigation.type === 2 );
+if ( historyTraversal ) {
+// Handle page restore.
+window.location.reload();
+}
+});
+</script>
+
+<script>
+  window.transitionToPage = function(href) {
+  document.querySelector('body').style.opacity = 0
+  setTimeout(function() {
+      window.location.href = href
+  }, 500)
+  }
+  document.addEventListener('DOMContentLoaded', function(event) {
+
+  }
+  )
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/xtn1kvy.css">
+    <link rel="stylesheet" href="portfolio.css">
+
+    <title>Helen Zhang ♡ Contact</title>
+
+
+  </head>
+  <body>
+    <nav id="nav" class="navbar navbar-fixed-top fixed-top navbar-expand">
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown mx-3">
+            <span class="nav-link" onclick="transitionToPage('home.html')" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              work
+            </span>
+            <div id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('brown.html')">brown dining services</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('hotplate.html')">hotplate</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('fruit.html')">fruit</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('hotsauce.html')">hotsauce</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('cactus.html')">cactus</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('instant.html')">instant</span>
+            </div>
+          </li>
+          <li class="nav-item dropdown mx-3">
+            <span class="nav-link" onclick="transitionToPage('art.html')" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              art
+            </span>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('digital.html')">digital</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('lettering.html')">lettering</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('social.html')">social</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('paper.html')">paper</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('clay.html')">clay</span>
+            </div>
+          </li>
+          <li class="nav-item dropdown mx-3">
+              <span class="nav-link" onclick="transitionToPage('about.html')" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                about
+              </span>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a id="dropdown-item" class="dropdown-item" href="./resume.pdf">resume</a>
+                <span id="dropdown-item" class="dropdown-item active-dropdown">contact</span>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section id="jumbotron" class="jumbotron about text-center">
+        <div class="container">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+            <h0 class="underlined underlined--thick">Contact</h0>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- <img src="./assets/Title.png" width="85%"/> -->
+        </div>
+      </section>
+
+      <div id="container" class="container-fluid">
+        <form
+          action="https://formspree.io/f/mzbkvnna"
+          method="POST">
+          <label>
+            E-Mail:
+            <input type="text" name="_replyto">
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+
+          <!-- your other form fields go here -->
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+
+
+      <div id="item-2" class="container-fluid small-container"></div>
+      <div id="container" class="container-fluid">
+        <br>
+        <h2 id="Lofi-title">Design</h2>
+        <br>
+        <h3>Components:</h3>
+        <ul>
+          <li>Location Filter</li>
+            <ol>
+              <li>Andrews</li>
+              <li>Ivy Room</li>
+              <li>Jo's (or Jos?)</li>
+              <li>Ratty</li>
+              <li>VDub</li>
+            </ol>
+          <li>Meal Filter</li>
+            <ol>
+              <li>Breakfast</li>
+              <li>Lunch</li>
+              <li>Dinner</li>
+            </ol>
+          <li>Sort</li>
+            <ol>
+              <li>Random</li>
+              <li>Price Low to High</li>
+              <li>Price High to Low</li>
+            </ol>
+          <li>Combineable filters and sorting</li>
+          <li>Item Cards</li>
+            <ol>
+              <li>Item Illustration</li>
+              <li>Location</li>
+              <li>Meal</li>
+              <li>Price</li>
+              <li>Add to Cart Button (can be clicked multiple times)</li>
+            </ol>
+          <li>Cart Aggregator</li>
+            <ol>
+              <li>Displays card for each added item</li>
+              <li>Remove (if > 1) and add items</li>
+              <li>Remove item completely from cart</li>
+              <li>Sums total price- updated with any interaction</li>
+              <li>Clear entire cart</li>
+            </ol>
+        </ul>
+        <br>
+        <h3 id="item-2-1">Usability Principles</h3>
+        <ul>
+          <li>Logical page setup</li>
+          <li>Page is responsive</li>
+          <li>Indicators for what settings are selected</li>
+          <li>Text indicates if no items fit parameters or if cart is empty</li>
+          <li>Buttons respond to hover</li>
+          <li>Colors chosen for adequate contrast</li>
+          <li>Distinct item cards</li>
+          <li>Padding and margins to keep content within high visibility region</li>
+        </ul>
+        <br>
+        <br>
+      </div>
+
+      <div id="item-4" class="container-fluid small-container"></div>
+      <div id="container" class="container-fluid">
+        <br>
+        <h2>Website</h2>
+        <br>
+          <a href="https://github.com/helenzhang8/Development" id="button" class="btn btn-info" role="button">Github Repository</a>
+        <br>
+        <br>
+          <a href="https://browndiningservices.herokuapp.com" id="button" class="btn btn-info" role="button">Development Website</a>
+        <br>
+        <br>
+        <br>
+        <iframe id="inlineFrameExample"
+          title="Inline Frame Example"
+          width="95%"
+          height="1000px"
+          src="https://browndiningservices.herokuapp.com">
+        </iframe>
+      </div>
+
+      <div id="footer" class="container-fluid footer-container"></div>
+    </main>
+
+<script>
+  document.querySelector('body').style.opacity = 1
+  window.addEventListener( "pageshow", function ( event ) {
+var historyTraversal = event.persisted ||
+                     ( typeof window.performance != "undefined" &&
+                          window.performance.navigation.type === 2 );
+if ( historyTraversal ) {
+// Handle page restore.
+window.location.reload();
+}
+});
+</script>
+
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  formbutton("create", {action: "https://formspree.io/f/mzbkvnna"})
+</script>
+
+<script>
+  window.transitionToPage = function(href) {
+  document.querySelector('body').style.opacity = 0
+  setTimeout(function() {
+      window.location.href = href
+  }, 500)
+  }
+  document.addEventListener('DOMContentLoaded', function(event) {
+
+  }
+  )
+</script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
