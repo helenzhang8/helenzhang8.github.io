@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://use.typekit.net/xtn1kvy.css">
     <link rel="stylesheet" href="portfolio.css">
 
-    <title>Helen Zhang ♡ Hotsauce</title>
+    <link rel="icon" type="image/png" href="./assets/favicomatic/favicon-32x32.png" sizes="32x32" />
+
+    <title>♡ Hotsauce</title>
 
 
   </head>
@@ -26,11 +28,9 @@
             </span>
             <div id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
               <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('brown.html')">brown dining services</span>
-              <span id="dropdown-item" class="dropdown-item"onclick="transitionToPage('hotplate.html')">hotplate</span>
+              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('hotplate.html')">hotplate</span>
               <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('fruit.html')">fruit</span>
-              <span id="dropdown-item" class="dropdown-item active-dropdown" >hotsauce</span>
-              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('cactus.html')">cactus</span>
-              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('instant.html')">instant</span>
+              <span id="dropdown-item" class="dropdown-item active-dropdown">hotsauce</span>
             </div>
           </li>
           <li class="nav-item dropdown mx-3">
@@ -50,7 +50,7 @@
                 about
               </span>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a id="dropdown-item" class="dropdown-item" href="./resume.pdf">resume</a>
+                <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('./resume.pdf')">resume</span>
                 <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('contact.html')">contact</span>
               </div>
           </li>
@@ -67,7 +67,7 @@
           <br>
           <br>
           <br>
-            <h0 class="underlined underlined--thick">Hotsauce</h0>
+            <h0n class="nounder">hotsauce.com</h0n>
             <br>
             <br>
             <br>
@@ -76,352 +76,403 @@
         </div>
       </section>
 
+      <div id="myModal" class="modal">
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+
       <div id="container" class="container-fluid">
-        <h1 id="item-1">Goal & Value</h1>
-          <br>
-          The goal of this application is to provide a shopping interface for Brown Dining Services (BDS).
-          <br>
-          <br>
-          Currently, BDS has a website that lists the dining hall options. However, this operates solely as a menu. My website aims to
-          provide a way for students to view and order their food, which may not require as much in-person interaction.
+          I completed a Responsive Redesign for hotsauce.com- this involved analyzing the website to identify usability
+          problems, creating low-fidelity and high-fidelity prototypes, and building a responsive website.
           <br>
           <br>
-          This is also a good tool for meal planning, as typically there is only a short description given for each item. This website allows
-          students to get a better idea of offerings that are available and plan out what they would like to eat. This is a general marketplace app,
-          not taking into consideration all-you-can-eat or point systems. It provides an estimation of the real-world prices of Brown's offerings.
+          I encountered this website when shopping for my best friend's birthday gift. She has a notoriously high heat tolerance, so I thought I'd buy her some hot sauce.
+          I searched for "hot sauce" on Google and selected the first option. I was immediately overwhelmed.
           <br>
           <br>
-          For students who are not on campus (like myself), this is a fun interface to provide them with some familiarity.
-          Students may be missing Brown's dining options, so this is an interactive way to reminisce upon better times.
+          <a href="https://www.hotsauce.com" id="button" class="btn btn-info" role="button">Visit hotsauce.com</a>
           <br>
-        <br>
+          <br>
       </div>
 
+      <div class="container-fluid hotsauce small-container"></div>
 
 
-      <div id="item-2" class="container-fluid small-container"></div>
-      <div id="container" class="container-fluid">
-        <br>
-        <h2 id="Lofi-title">Design</h2>
-        <br>
-        <h3>Components:</h3>
-        <ul>
-          <li>Location Filter</li>
-            <ol>
-              <li>Andrews</li>
-              <li>Ivy Room</li>
-              <li>Jo's (or Jos?)</li>
-              <li>Ratty</li>
-              <li>VDub</li>
-            </ol>
-          <li>Meal Filter</li>
-            <ol>
-              <li>Breakfast</li>
-              <li>Lunch</li>
-              <li>Dinner</li>
-            </ol>
-          <li>Sort</li>
-            <ol>
-              <li>Random</li>
-              <li>Price Low to High</li>
-              <li>Price High to Low</li>
-            </ol>
-          <li>Combineable filters and sorting</li>
-          <li>Item Cards</li>
-            <ol>
-              <li>Item Illustration</li>
-              <li>Location</li>
-              <li>Meal</li>
-              <li>Price</li>
-              <li>Add to Cart Button (can be clicked multiple times)</li>
-            </ol>
-          <li>Cart Aggregator</li>
-            <ol>
-              <li>Displays card for each added item</li>
-              <li>Remove (if > 1) and add items</li>
-              <li>Remove item completely from cart</li>
-              <li>Sums total price- updated with any interaction</li>
-              <li>Clear entire cart</li>
-            </ol>
-        </ul>
-        <br>
-        <h3 id="item-2-1">Usability Principles</h3>
-        <ul>
-          <li>Logical page setup</li>
-          <li>Page is responsive</li>
-          <li>Indicators for what settings are selected</li>
-          <li>Text indicates if no items fit parameters or if cart is empty</li>
-          <li>Buttons respond to hover</li>
-          <li>Colors chosen for adequate contrast</li>
-          <li>Distinct item cards</li>
-          <li>Padding and margins to keep content within high visibility region</li>
-        </ul>
-        <br>
-        <br>
-      </div>
-
-      <div id="item-3" class="container-fluid small-container"></div>
-      <div id="container" class="container-fluid">
-        <br>
-        <h2>Item Gallery</h2>
-
-        <div class="carousel container container-fluid">
-        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" width="100%">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="4"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="5"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="6"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="7"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="8"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="9"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="10"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="11"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="12"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="13"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="14"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="15"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="16"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="17"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="18"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="19"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="20"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="21"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="22"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="23"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="24"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="25"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="26"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="27"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="28"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="29"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="30"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="31"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="32"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="33"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="34"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="35"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="36"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="37"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="38"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="39"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="40"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="41"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="42"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="43"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="44"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="45"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="46"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="47"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="48"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="49"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="50"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="51"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="52"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="53"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active img-fluid">
-              <img src="./assets/Apple1.png" class="small_image" alt=""/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Avocado.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Bagel.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Baked.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/BananaPan.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/BluePan.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/BluePop.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Bread.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Brownie.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Burrito.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Cape.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Cheesy.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Chicken.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/ChickenSoup.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Chobani.png" class="small_image" alt=""/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Coffee.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Cookie.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Corn.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Egg.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/EggRoll.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Extra.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Froot.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Granola.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Kombucha.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Lucky.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Mild.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Miso.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Mozzarella.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Naanwich.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Oats.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/OGP.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Olive.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Omelette.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Pancake.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Pasta.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Pepperoni.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Pho.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Plantain.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Quesadilla.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Roll.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Roman.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Salad.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Salmon.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Smoothie.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Spicy.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/SpicyCurry.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/StrawPop.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Sushi.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Taco.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Tofu.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Tomato.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Uncrustable.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/White.png" class="small_image" alt="..."/>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/Wing.png" class="small_image" alt="..."/>
-            </div>
-          </div>
-
-          <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
-        </div>
-      </div>
-      </div>
-
-      <div id="item-4" class="container-fluid small-container"></div>
       <div id="container" class="container-fluid">
         <br>
         <h2>Website</h2>
         <br>
-          <a href="https://github.com/helenzhang8/Development" id="button" class="btn btn-info" role="button">Github Repository</a>
+        hotsauce.com has the benefit of an extremely recognizable domain name, as well as being the first search result. However, its website design is extremely outdated.
+        This may be an intentional choice on the part of hotsauce.com- more questionable design could be equated to lower prices.
+        Hotsauce.com comes off as a wholesale seller with reduced prices, if not somewhat suspicious.
         <br>
         <br>
-          <a href="https://browndiningservices.herokuapp.com" id="button" class="btn btn-info" role="button">Development Website</a>
+        However, its competitors generally have more "palatable" designs.
         <br>
         <br>
+        Click on an image to visit its website.
         <br>
-        <iframe id="inlineFrameExample"
-          title="Inline Frame Example"
-          width="95%"
-          height="1000px"
-          src="https://browndiningservices.herokuapp.com">
-        </iframe>
+        <br>
+        </div>
+        <div class="grid-container">
+          <div class="left">
+            <h3 id="hotsauce-image-title">hotsauce.com</h3>
+            <a href="https://www.hotsauce.com"><img src="./assets/Home_crop.png" id="image-link" class="img-fluid" alt="Responsive image"/></a>
+          </div>
+          <div class="right">
+            <h3 id="competitor-image-title">Competitors</h3>
+            <a href="https://heathotsauce.com"> <img src="./assets/heathotsauce-copy.png" id="image-link" class="img-fluid" alt="Responsive image"/></a>
+            <a href="https://heatonist.com"><img src="./assets/heatonist-copy.png" id="image-link" class="img-fluid" alt="Responsive image"/></a>
+          </div>
+        </div>
+
+        <div class="container-fluid hotsauce small-container"></div>
+
+        <div id="container" class="container-fluid">
+          <br>
+          <h2>Usability Problems</h2>
+
+        </div>
+          <div class="grid-container">
+                      <br>
+            <div class="left">
+              <img class="myImages" src="./assets/Home-Label.png" width="90%" class="img-fluid" alt="Responsive image"/>
+              <br>
+              <img class="myImages" src="./assets/Unresponsive.png" width="90%" class="img-fluid" alt="Responsive image"/>
+            </div>
+            <div class="right">
+              <h4>Overall Design</h4>
+              <ul>
+                <li>Website is very overwhelming</li>
+                <li>Looks a bit sketchy and outdated</li>
+                <li>Too many different colors
+                  <ul>
+                    <li>Red and green contrast too much, assigned in an alternating pattern.</li>
+                    <li>Not enough contrast between red fonts and orange background </li>
+                    <li>Gradients look outdated</li>
+                  </ul>
+                </li>
+                <li>Font is skinny, making it difficult to read</li>
+                <li>General lack of consistency</li>
+              </ul>
+              <h4>Responsiveness</h4>
+              <ul>
+                <li>When shrinking the screen, it becomes distorted- especially heading</li>
+                <li>Past a certain point drop-down menu appears, but menu and button are separated by heading</li>
+                <li>When zooming out, heading background repeats</li>
+              </ul>
+              <h4>1. Heading Links</h4>
+              <ul>
+                <li>Too much information</li>
+                <li>Layout doesn't make sense- choice of links for left and right is confusing</li>
+                <li>Home link is redundant- logo can serve as link</li>
+                <li>Some links would be better off as categories or subcategories</li>
+                <li>Many links are redundant- already represented as categories</li>
+              </ul>
+              <h4>2. Top Banner</h4>
+              <ul>
+                <li>Not prominent enough- line underneath is very thin</li>
+                <li>Text could be more succint</li>
+              </ul>
+              <h4>3. Logo</h4>
+              <ul>
+                <li>Too complicated, has too many colors</li>
+                <li>Name is hard to read, lacks contrast</li>
+                <li>Looks outdated</li>
+                <li>Slogan doesn't make sense</li>
+                <li>Fonts don't match</li>
+              </ul>
+              <h4>4. Categories</h4>
+              <ul>
+                <li>Category selection is a bit random</li>
+                <li>Drop down subcategories could be helpful</li>
+                <li>Titles should be standardized e.g. plurals, punctuation</li>
+                <li>"Hottest Daily Deals" is a bit gimmicky</li>
+              </ul>
+              <h4>5. Banner</h4>
+              <ul>
+                <li>Inconsistent picture dimensions</li>
+                <li>Low quality images</li>
+                <li>Selector would be nice</li>
+                <li>Image choice is strange</li>
+              </ul>
+              <h4>6. Additional Categories</h4>
+              <ul>
+                <li>More complicated</li>
+                <li>Redundancies with primary categories</li>
+                <li>Nice idea to have picture categories though</li>
+              </ul>
+              <h4>7. Featured Products</h4>
+              <ul>
+                <li>Brands listed twice- in name and underneath</li>
+                <li>Poorly responsive- too many in a row, 5 stars usually don't fit in one line</li>
+                <li>All prices reduced, but only some "on sale"</li>
+                <li>View Product buttons don't line up</li>
+              </ul>
+              <h4>8. Hottest New Products</h4>
+              <ul>
+                <li>Redundant</li>
+                <li>Scroll bar is nice</li>
+              </ul>
+              <h4>9. Brands</h4>
+              <ul>
+                <li>Some brands do not have products on site</li>
+                <li>No apparent order</li>
+              </ul>
+              <h4>10. Mailing List</h4>
+              <ul>
+                <li>Subscribe button is on the top</li>
+              </ul>
+              <h4>11. Footer</h4>
+              <ul>
+                <li>Redundant</li>
+                <li>Doesn't appear the most trustworthy</li>
+                <li>Has potential!</li>
+              </ul>
+            </div>
+          </div>
+
+      <div class="container-fluid hotsauce small-container"></div>
+      <div id="container" class="container-fluid">
+        <br>
+        <h2>Accessibility</h2>
+
+      </div>
+        <div class="grid-container">
+                    <br>
+          <div class="left">
+            <img src="./assets/WAVE.png" class="small_image" alt="Responsive image"/>
+          </div>
+          <div class="right">
+            <ul>
+              <li> Using the WAVE tool showed that the website is missing alternative text, headings,
+                 and heading structure in many places. </li>
+              <br>
+              <li>A lot of areas on the page have very low contrast between colors, making them
+             hard to read for certain users. This is especially obvious on low saturation.</li>
+             <br>
+             <li>The random color changes are also quite hard to understand and follow.</li>
+             <br>
+             <li>Using a Screen Reader showed that the large amount of text at the top
+             of the screen was very hard to understand and navigate. A lot of this content
+             would be better suited for the bottom of the page.</li>
+             <br>
+             <li>Obstructive pop-up ads are not user-friendly.</li>
+           </ul>
+          </div>
+        </div>
+
+        <div class="container-fluid hotsauce small-container"></div>
+        <div id="container" class="container-fluid">
+          <br>
+          <h2>Low-Fidelity Prototypes</h2>
+          <br>
+          <h3>Addressing Usability Issues:</h3>
+          <ul>
+            <li>Change color scheme and font choice</li>
+            <li>Create new top announcement bar with greater visibility and less test</li>
+            <li>Reorganize categories so they make sense and there is less heading text- this will be reflected in the dropdown menus on the real website</li>
+            <li>Curate brands and move brand carousel higher up on page</li>
+            <li>Changed product presentation to make it more uniform</li>
+            <li>Eliminated Hottest Products section</li>
+            <li>Moved Subscribe button for e-mail form</li>
+            <li>More official footer</li>
+            <li>Handled responsiveness issues</li>
+          <br>
+
+          <div class="carousel container container-fluid">
+          <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" width="100%">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active img-fluid">
+                <img class="myImages" src="./assets/web2.png" class="small_image" alt="Web lo-fi prototype."/>
+              </div>
+              <div class="carousel-item">
+                <img class="myImages" src="./assets/Lo-fi/Tablet.png" class="small_image" alt="Tablet lo-fi prototype."/>
+              </div>
+              <div class="carousel-item">
+                <img class="myImages" src="./assets/phone2.png" class="small_image" alt="Phone lo-fi prototype."/>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
+          </div>
+        </div>
+
+          <div class="container-fluid hotsauce small-container"></div>
+          <div id="container" class="container-fluid">
+            <br>
+            <h2>High-Fidelity Prototypes</h2>
+            <br>
+            <h3>Visual Design Approach:</h3>
+            <ul>
+              <li>Tried to be a bit flashy/wacky to retain the original feeling of the website</li>
+              <li>Established a thematic color scheme</li>
+              <li>Contrasting colors for text visibility, while remaining within scheme</li>
+              <li>Darkest colors at top and bottom (slight gradient), white background for products</li>
+              <li>Different backgrounds for each category</li>
+              <li>Fonts- one accent font for title, sans serif font for other headings and text </li>
+              <li>Simplified logo</li>
+              <li>Brand PNGs for clean look, brand recognition and consumer trust</li>
+              <li>Higher quality images, uniformity within categories</li>
+              <li>Responsiveness to reduce content on page, eliminate clutter</li>
+            </ul>
+            <br>
+            <div class="carousel container container-fluid">
+            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" width="100%">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active img-fluid">
+                  <img class="myImages" src="./assets/hifi1.png" class="small_image" alt="Web hi-fi prototype."/>
+                </div>
+                <div class="carousel-item">
+                  <img class="myImages" src="./assets/iPad-Labeled.PNG" class="small_image" alt="Tablet hi-fi prototype."/>
+                </div>
+                <div class="carousel-item">
+                  <img class="myImages" src="./assets/iPhone X, XS, 11 Pro – 1@2x.png" class="small_image" alt="Phone hi-fi prototype."/>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+              </a>
+            </div>
+            </div>
+          </div>
+
+            <div id="Visual-Design" class="container-fluid small-container"></div>
+            <div id="container" class="container-fluid">
+              <br>
+              <h2 id="Visual-Design-title">Visual Design Style Guide</h2>
+              <br>
+              <!-- Coolors Palette Widget -->
+                <script src="https://coolors.co/palette-widget/widget.js"></script>
+                <script data-id="048424110796431685">new CoolorsPaletteWidget("048424110796431685", ["03071e","370617","6a040f","9d0208","d00000","dc2f02","e85d04","f48c06","faa307","ffba08"]); </script>
+            <br>
+            <img src="./assets/VisDesign.png" width="80%" class="myImages" alt="Visual Design Style Guide."/>
+              <br>
+              <br>
+              The Visual Design Style Guide is designed to represent the prototypes rather than the website. Some website components are slightly different, namely the carousel arrows due to technical limitations.
+              <br>
+              <br>
+            </div>
+
+            <div id="Overview3" class="container-fluid small-container"></div>
+            <div id="container" class="container-fluid">
+              <br>
+              <h3 id="Overview2-title">Responsive Redesign</h3>
+              <br>
+              <p>View the final product!</p>
+              <a href="https://young-retreat-94625.herokuapp.com" id="button" class="btn btn-info" role="button">Redesigned Website</a>
+            <br>
+            <br>
+                <a href="https://github.com/helenzhang8/responsive-redesign" id="button" class="btn btn-info" role="button">Github Repository</a>
+              <br>
+              <br>
+
+              <br>
+              <div class="grid-container">
+                <div class="left">
+                  <img src="./assets/H0.png" id="image-link" class="myImages" alt="Upper half of redesigned website."/>
+                </div>
+                <div class="right">
+                  <img src="./assets/H1.png" id="image-link" class="myImages" alt="Lower half of redesigned website."/>
+                </div>
+              </div>
+
+            </div>
+
+<div class="container-fluid hotsauce small-container"></div>
+
+      <div id="container" class="container-fluid">
+        <br>
+        <h2>Overall Takeaway</h2>
+        <br>
+          <p>
+            Responsive design turned out to be quite difficult. To make the website truly responsive
+            requires much more skill than I currently have. I used Bootstrap for certain aspects
+            of this website, but experienced difficulty in others- plain Flexbox usually worked for these
+             situations. However, there are still spots on the page that are a bit finnicky.
+             <br>
+             <br>
+             Overall,
+             the website accommodates the three sizes as well as different font sizes. It is also fairly
+             interactive! Feel free to check it out :)
+          </p>
+        <br>
       </div>
 
-      <div id="footer" class="container-fluid footer-container"></div>
     </main>
+    <script>
+      var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var images = document.getElementsByClassName('myImages');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        var prev = document.getElementsByClassName("carousel-control-prev");
+        var next = document.getElementsByClassName("carousel-control-next");
+        var ind = document.getElementsByClassName("carousel-indicators");
+        for (var i = 0; i < images.length; i++) {
+          var img = images[i];
+          // and attach our click listener for this image.
+          img.onclick = function(evt) {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+
+
+            for (var i = 0; i < prev.length; i++) {
+              var prev1 = prev[i];
+              var next1 = next[i];
+              prev1.style.opacity = 0;
+              next1.style.opacity = 0;
+            }
+
+            for (var i = 0; i < ind.length; i++) {
+              var ind1 = ind[i];
+              ind1.style.opacity = 0;
+            }
+
+      }
+    }
+
+        // When the user clicks on <span> (x), close the modal
+        modal.onclick = function() {
+          modal.style.display = "none";
+          for (var i = 0; i < prev.length; i++) {
+            var prev1 = prev[i];
+            var next1 = next[i];
+            prev1.style.opacity = 1;
+            next1.style.opacity = 1;
+          }
+          for (var i = 0; i < ind.length; i++) {
+            var ind1 = ind[i];
+            ind1.style.opacity = 1;
+          }
+    }
+      </script>
 
     <script>
       document.querySelector('body').style.opacity = 1

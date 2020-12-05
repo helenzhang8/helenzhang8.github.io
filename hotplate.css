@@ -1,0 +1,508 @@
+/* Put your style information here! */
+
+body {
+  opacity: 0;
+  transition: opacity 0.8s;
+  width: 100%;
+	background-color: #ffffff;
+  font-family: helvetica ,sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #001427;
+  font-weight: 100;
+  text-align: center;
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+main {
+  overflow-x: hidden;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+#fs-frm-inputs {
+  text-align: left;
+  display: flex;
+  flex-direction: column !important;
+}
+
+#full-name, #email-address, #message {
+  width: 95%;
+}
+
+.carousel-indicators {
+  color: black;
+}
+
+
+h0 {
+  color: #001427;
+  font-size: 50px;
+  font-family: lust, serif;
+  font-style: normal;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  background-image: linear-gradient(to right, #fbdf9d 0%, #fbdf9d 100%);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s;
+}
+
+h0n {
+  color: #001427;
+  font-size: 50px;
+  font-family: lust, serif;
+  font-style: normal;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+  background-color: white;
+  background-size: 100% 100%;
+}
+
+h0:hover{
+  background-size: 100% 100%;
+}
+
+
+h1 {
+  font-size: 60px;
+  font-family: lust, serif;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #001427;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: lust, serif;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #355070;
+  text-align: center;
+}
+
+h3 {
+  font-size: 35px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #708d81;
+  font-weight: normal;
+  text-align: center;
+}
+
+ul {
+  list-style-position: inside;
+  text-align: left;
+  list-style-type: square;
+}
+ol {
+  list-style-position: inside;
+  text-align: left;
+}
+
+.textbox {
+  align-items: center;
+}
+
+
+#container {
+  padding: 2%;
+  text-align: center;
+}
+
+#title{
+  color: #370617;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.jumbotron{
+  position: relative;
+  background-size: cover;
+  margin: 30px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.jumbotron1{
+  position: relative;
+  background-size: cover;
+  margin: 30px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.digital{
+  background: url("./assets/Nature1.png") center;
+}
+
+.brown{
+  background: url("./assets/Brown.jpeg") center;
+}
+
+.paper{
+  background: url("./assets/Rasp1.png") center;
+}
+
+.lettering{
+  background: url("./assets/Ash.png") center;
+}
+
+.social {
+  background: url("./assets/Kick.png") center;
+}
+
+
+.about {
+  background: url("./assets/About.png") center;
+}
+
+.clay {
+  background: url("./assets/Blue1.png") center;
+}
+
+.hotplate {
+  background: url("./assets/Blue1.png") center;
+}
+
+#container {
+  background-color: #f9f9f9;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+#gen-container {
+  background-color: #f9f9f9;
+}
+
+#flexrow {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: pink;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.small-container{
+  background-size: cover;
+  height: 20px;
+}
+.blank-container{
+  background-color: #f9f9f9;
+  height: 15px;
+}
+
+.footer-container{
+  background-size: cover;
+  height: 50px;
+}
+
+#col{
+  min-width: 500px;
+}
+
+#button{
+  color: white;
+  background-color: #4d908e;
+  border: none;
+  box-shadow: 0 8px #277da1;
+}
+
+#button:hover{
+  background-color: #43aa8b;
+}
+
+#button:active{
+  transform: translateY(6px);
+  background-color: #43aa8b;
+  box-shadow: 0 4px #277da1;
+}
+
+#image-link:hover{
+  opacity: 70%;
+}
+
+#jumbo-link:hover{
+  cursor: pointer;
+}
+
+.image-container {
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+.image-container .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+}
+.image-container:hover .after {
+    display: block;
+    background: rgba(0, 0, 0, .6);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'left right'
+    'footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+  margin-right: 7.5px;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+  margin-left: 20px;
+}
+/* Style the right column */
+.right {
+  grid-area: right;
+  margin-left: 7.5px;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+  margin-right: 20px;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 800px) {
+  .grid-container  {
+    grid-template-areas:
+      'left'
+      'right';
+  }
+  .left, .right {
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+.carousel{
+  text-align: center !important;
+  max-width: 750px !important;
+}
+
+.small_image{
+  text-align: center !important;
+  max-width: 750px !important;
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minimax(1000px,1fr));
+}
+
+img {
+	min-width: 0;
+	min-height: 0;
+	padding: 10px;
+  width: 100%;
+	height:auto;
+}/* Put your style information here! */
+
+
+@media all and (min-width: 0px) {
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+#navbar-toggler {
+    /* background-image: linear-gradient(to right, pink 0%, blue 100%);
+    background-color: transparent; */
+    background-color: lightgrey;
+    color: white;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.dropdown-menu{
+  background-color: white;
+
+}
+
+#dropdown-item{
+  color: black;
+  background-image: linear-gradient(to right, #fbdf9d 0%, #fbdf9d 100%);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s;
+}
+
+#dropdown-item:hover{
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.active-dropdown{
+  background-image: linear-gradient(to right, #f0efeb 0%, #f0efeb 100%) !important;
+  background-size: 100% 100% !important;
+}
+
+#navbarDropdown {
+  color:black;
+  flex: 1;
+  line-height: 1.2;
+  text-decoration: none;
+  /* background-image: linear-gradient(to right, pink 0%, blue 100%); */
+  background-image: linear-gradient(to right, #fbdf9d 0%, #fbdf9d 100%);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s;
+}
+
+#navbarDropdown:hover {
+  background-size: 100% 100%;
+}
+
+.jumbotron:hover .underlined{
+  background-size: 100% 100%;
+  color: #001427;
+}
+
+.nounder {
+  position: absolute;
+   top: 55%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+  padding: 10px;
+  font-family: lust, serif;
+  flex: 1;
+
+}
+
+.underlined {
+  position: absolute;
+   top: 55%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+  padding: 10px;
+  font-family: lust, serif;
+  flex: 1;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #fbdf9d 0%, #fbdf9d 100%);
+  background-position: 0;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.75s;
+}
+
+@media (max-width: 768px) {
+  nav.navbar {
+    background: white;
+  }
+}
+
+.navbar-header{
+  font-size: 3px;
+}
+
+.carousel .carousel-indicators li{
+  background-color: #4d908e;
+}
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234d908e' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234d908e' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/* Style the Image Used to Trigger the Modal */
+.myImages {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.myImages:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1000px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}

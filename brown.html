@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/xtn1kvy.css">
     <link rel="stylesheet" href="portfolio.css">
 
-    <title>Helen Zhang ♡ BDS</title>
+    <link rel="icon" type="image/png" href="./assets/favicomatic/favicon-32x32.png" sizes="32x32" />
+    <title>♡ BDS</title>
 
 
   </head>
@@ -29,8 +30,6 @@
               <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('hotplate.html')">hotplate</span>
               <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('fruit.html')">fruit</span>
               <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('hotsauce.html')">hotsauce</span>
-              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('cactus.html')">cactus</span>
-              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('instant.html')">instant</span>
             </div>
           </li>
           <li class="nav-item dropdown mx-3">
@@ -50,7 +49,7 @@
                 about
               </span>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a id="dropdown-item" class="dropdown-item" href="./resume.pdf">resume</a>
+                <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('./resume.pdf')">resume</span>
                 <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('contact.html')">contact</span>
               </div>
           </li>
@@ -67,7 +66,7 @@
           <br>
           <br>
           <br>
-            <h0 class="underlined underlined--thick">Brown Dining Services</h0>
+            <h0n class="nounder">Brown Dining Services</h0n>
             <br>
             <br>
             <br>
@@ -76,10 +75,27 @@
         </div>
       </section>
 
+      <div id="myModal" class="modal">
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+
       <div id="container" class="container-fluid">
-        <h1 id="item-1">Goal & Value</h1>
           <br>
-          The goal of this application is to provide a shopping interface for Brown Dining Services (BDS).
+          The goal of this project, "Development", was to use React to create a list website that would
+          aggregate some value for the list items. I decided to create a shopping interface for Brown Dining Services (BDS).
+          <br>
+          <br>
+          I was inspired by Brown's very specific, sometimes underwhelming dining options. Despite having been away from
+          campus for so long, these foods remain very clear in my mind- during quarantine, my friends and I
+          had a very spirited argument over a Brown Dining Options Tier List (my personal ranking is below). It seems
+          that people are really passionate about food at Brown.
+          <br>
+          <br>
+          <img class="myImages" src="./assets/Draw.jpeg" alt="Brown Dining Offerings"/>
+          <img class="myImages" src="./assets/Tier.png" alt="Brown Dining Options Tier List"/>
           <br>
           <br>
           Currently, BDS has a website that lists the dining hall options. However, this operates solely as a menu. My website aims to
@@ -97,55 +113,34 @@
         <br>
       </div>
 
-
-
-      <div id="item-2" class="container-fluid small-container"></div>
+      <div id="item-2" class="container-fluid brown small-container"></div>
       <div id="container" class="container-fluid">
         <br>
         <h2 id="Lofi-title">Design</h2>
         <br>
-        <h3>Components:</h3>
-        <ul>
-          <li>Location Filter</li>
-            <ol>
-              <li>Andrews</li>
-              <li>Ivy Room</li>
-              <li>Jo's (or Jos?)</li>
-              <li>Ratty</li>
-              <li>VDub</li>
-            </ol>
-          <li>Meal Filter</li>
-            <ol>
-              <li>Breakfast</li>
-              <li>Lunch</li>
-              <li>Dinner</li>
-            </ol>
-          <li>Sort</li>
-            <ol>
-              <li>Random</li>
-              <li>Price Low to High</li>
-              <li>Price High to Low</li>
-            </ol>
-          <li>Combineable filters and sorting</li>
-          <li>Item Cards</li>
-            <ol>
-              <li>Item Illustration</li>
-              <li>Location</li>
-              <li>Meal</li>
-              <li>Price</li>
-              <li>Add to Cart Button (can be clicked multiple times)</li>
-            </ol>
-          <li>Cart Aggregator</li>
-            <ol>
-              <li>Displays card for each added item</li>
-              <li>Remove (if > 1) and add items</li>
-              <li>Remove item completely from cart</li>
-              <li>Sums total price- updated with any interaction</li>
-              <li>Clear entire cart</li>
-            </ol>
-        </ul>
+        <h3>Components</h3>
+        <br>
+        <p>The project required filter and sorting functions. I implemented a Location filter (Andrew,
+          Ivy Room, Jo's, Ratty, VDub) and Meal filter (Breakfast, Lunch, Dinner). I also enabled sorting by ascending and
+        descending price.</p>
+        <img class="myImages" src="./assets/Top.png" alt="Heading and Filter/Sorting Options"/>
+        <br>
+        <br>
+        I created an Item Card for each item. Each card displays an illustration, location, meal, and price,
+        followed by an Add to Cart button.
+        <br>
+        <br>
+        The last component is the aggregator- in this case, a cart. The cart contains each added item, with the option to add/remove
+        a unit, as well as remove an item entirely. There is also an option to clear the entire cart. The total sum is displayed at the bottom.
+        <br>
+        <br>
+        <h3>Code Overview</h3>
+        <br>
+        <img class="myImages" src="./assets/Development/Code.png" alt="Snippet from README describing components/files used."/>
+        <br>
         <br>
         <h3 id="item-2-1">Usability Principles</h3>
+        <br>
         <ul>
           <li>Logical page setup</li>
           <li>Page is responsive</li>
@@ -160,11 +155,13 @@
         <br>
       </div>
 
-      <div id="item-3" class="container-fluid small-container"></div>
+      <div id="item-3" class="container-fluid brown small-container"></div>
       <div id="container" class="container-fluid">
         <br>
-        <h2>Item Gallery</h2>
-
+        <h2>Item Illustrations</h2>
+        <p>I used Procreate to create illustrations for each item available for purchase. These are
+        relatively minimalistic but I tried to include key details, like the snap peas in the
+      Ratty miso bowl and the unchopped Jo's salad.</p>
         <div class="carousel container container-fluid">
         <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" width="100%">
           <ol class="carousel-indicators">
@@ -225,166 +222,166 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active img-fluid">
-              <img src="./assets/Apple1.png" class="small_image" alt=""/>
+              <img src="./assets/Development/Apple1.png" class="small_image" alt=""/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Avocado.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Avocado.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Bagel.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Bagel.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Baked.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Baked.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/BananaPan.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/BananaPan.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/BluePan.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/BluePan.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/BluePop.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/BluePop.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Bread.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Bread.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Brownie.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Brownie.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Burrito.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Burrito.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Cape.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Cape.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Cheesy.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Cheesy.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Chicken.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Chicken.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/ChickenSoup.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/ChickenSoup.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Chobani.png" class="small_image" alt=""/>
+              <img src="./assets/Development/Chobani.png" class="small_image" alt=""/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Coffee.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Coffee.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Cookie.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Cookie.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Corn.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Corn.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Egg.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Egg.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/EggRoll.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/EggRoll.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Extra.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Extra.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Froot.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Froot.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Granola.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Granola.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Kombucha.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Kombucha.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Lucky.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Lucky.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Mild.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Mild.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Miso.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Miso.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Mozzarella.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Mozzarella.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Naanwich.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Naanwich.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Oats.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Oats.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/OGP.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/OGP.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Olive.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Olive.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Omelette.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Omelette.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Pancake.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Pancake.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Pasta.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Pasta.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Pepperoni.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Pepperoni.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Pho.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Pho.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Plantain.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Plantain.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Quesadilla.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Quesadilla.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Roll.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Roll.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Roman.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Roman.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Salad.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Salad.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Salmon.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Salmon.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Smoothie.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Smoothie.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Spicy.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Spicy.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/SpicyCurry.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/SpicyCurry.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/StrawPop.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/StrawPop.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Sushi.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Sushi.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Taco.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Taco.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Tofu.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Tofu.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Tomato.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Tomato.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Uncrustable.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Uncrustable.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/White.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/White.png" class="small_image" alt="..."/>
             </div>
             <div class="carousel-item">
-              <img src="./assets/Wing.png" class="small_image" alt="..."/>
+              <img src="./assets/Development/Wing.png" class="small_image" alt="..."/>
             </div>
           </div>
 
@@ -400,28 +397,94 @@
       </div>
       </div>
 
-      <div id="item-4" class="container-fluid small-container"></div>
+      <div id="item-4" class="container-fluid brown small-container"></div>
       <div id="container" class="container-fluid">
         <br>
         <h2>Website</h2>
         <br>
-          <a href="https://github.com/helenzhang8/Development" id="button" class="btn btn-info" role="button">Github Repository</a>
+        <p> These are some example stills of the website.
+        </p>
+        <img class="myImages" src="./assets/Development/Ex3.png" alt="Initial state."/>
+        <img class="myImages" src="./assets/Development/Ex1.png" alt="Website with filters and sorting applied."/>
+        <img class="myImages" src="./assets/Development/Ex2.png" alt="My example cart."/>
         <br>
         <br>
+        <p> View the website (and corresponding code) below.</p>
           <a href="https://browndiningservices.herokuapp.com" id="button" class="btn btn-info" role="button">Development Website</a>
         <br>
         <br>
+        <a href="https://github.com/helenzhang8/Development" id="button" class="btn btn-info" role="button">Github Repository</a>
         <br>
-        <iframe id="inlineFrameExample"
-          title="Inline Frame Example"
-          width="95%"
-          height="1000px"
-          src="https://browndiningservices.herokuapp.com">
-        </iframe>
+        <br>
       </div>
 
-      <div id="footer" class="container-fluid footer-container"></div>
+      <div id="item-4" class="container-fluid brown small-container"></div>
+      <div id="container" class="container-fluid">
+        <br>
+        <h2>Conclusion</h2>
+        <br>
+        <p>After getting used to React, making this website was really enjoyable. There are so many possibilities,
+          which makes it a really useful tool. The HTML for this project only contained one element, so I think experimenting more
+          with using HTML and React would be helpful in the future.
+          <br>
+          I also had so much fun designing the website- it wouldn't really be
+          feasible in reality, but I do think it has some promising ideas. It's definitely something that doesn't
+          exist at this moment. I enjoyed "ordering food", and am excited to learn more of what's possible with React.
+
+        </p>
+        <br>
+        <br>
+      </div>
     </main>
+    <script>
+      var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var images = document.getElementsByClassName('myImages');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        var prev = document.getElementsByClassName("carousel-control-prev");
+        var next = document.getElementsByClassName("carousel-control-next");
+        var ind = document.getElementsByClassName("carousel-indicators");
+        for (var i = 0; i < images.length; i++) {
+          var img = images[i];
+          // and attach our click listener for this image.
+          img.onclick = function(evt) {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+
+
+            for (var i = 0; i < prev.length; i++) {
+              var prev1 = prev[i];
+              var next1 = next[i];
+              prev1.style.opacity = 0;
+              next1.style.opacity = 0;
+            }
+
+            for (var i = 0; i < ind.length; i++) {
+              var ind1 = ind[i];
+              ind1.style.opacity = 0;
+            }
+
+      }
+    }
+
+        // When the user clicks on <span> (x), close the modal
+        modal.onclick = function() {
+          modal.style.display = "none";
+          for (var i = 0; i < prev.length; i++) {
+            var prev1 = prev[i];
+            var next1 = next[i];
+            prev1.style.opacity = 1;
+            next1.style.opacity = 1;
+          }
+          for (var i = 0; i < ind.length; i++) {
+            var ind1 = ind[i];
+            ind1.style.opacity = 1;
+          }
+    }
+      </script>
 
     <script>
       document.querySelector('body').style.opacity = 1

@@ -12,7 +12,7 @@
 
     <link rel="icon" type="image/png" href="./assets/favicomatic/favicon-32x32.png" sizes="32x32" />
 
-    <title>Helen Zhang ♡</title>
+    <title>♡</title>
 
 
   </head>
@@ -30,8 +30,6 @@
               <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('hotplate.html')">hotplate</span>
               <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('fruit.html')">fruit</span>
               <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('hotsauce.html')">hotsauce</span>
-              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('cactus.html')">cactus</span>
-              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('instant.html')">instant</span>
             </div>
           </li>
           <li class="nav-item dropdown mx-3">
@@ -51,7 +49,7 @@
                 about
               </span>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a id="dropdown-item" class="dropdown-item" href="./resume.pdf">resume</a>
+                <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('./resume.pdf')">resume</span>
                 <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('contact.html')">contact</span>
               </div>
           </li>
@@ -60,14 +58,14 @@
     </nav>
 
     <main>
-      <section id="jumbotron" class="jumbotron rounded-0 text-center">
+      <section id="jumbotron" class="jumbotron home rounded-0 text-center">
         <div class="container">
           <br>
           <br>
           <br>
           <br>
           <br>
-          <h0 class="underlined underlined--thick">Hi, my name is Helen.</h0>
+          <h0 class="underlined underlined--thick">My Name</h0>
           <br>
           <br>
           <br>
@@ -77,51 +75,24 @@
       </section>
 
       <div class="grid-container">
-        <span id="image-link" class="left" onclick="transitionToPage('brown.html')">
-          <h1 id="item-1">Goal & Value</h1>
-          <br>
-          The goal of this application is to provide a shopping interface for Brown Dining Services (BDS).
-          <br>
-        </span>
-        <span id="image-link" class="right" onclick="transitionToPage('hotplate.html')">
-          <h1 id="item-1">Goal & Value</h1>
-          <br>
-          The goal of this application is to provide a shopping interface for Brown Dining Services (BDS).
-          <br>
-        </span>
+        <div class="left">
+          <img id="image-link" src="./assets/AB.png" onclick="transitionToPage('brown.html')" alt="..."/>
+        </div>
+        <div class="right">
+          <img id="image-link" src="./assets/AB.png" onclick="transitionToPage('hotplate.html')" alt="..."/>
+        </div>
       </div>
 
       <div class="grid-container">
-        <span id="image-link" class="left" onclick="transitionToPage('fruit.html')">
-          <h1 id="item-1">Goal & Value</h1>
-          <br>
-          The goal of this application is to provide a shopping interface for Brown Dining Services (BDS).
-          <br>
-        </span>
-        <span id="image-link" class="right" onclick="transitionToPage('hotsauce.html')">
-          <h1 id="item-1">Goal & Value</h1>
-          <br>
-          The goal of this application is to provide a shopping interface for Brown Dining Services (BDS).
-          <br>
-        </span>
+        <div class="left">
+          <img id="image-link" src="./assets/AB.png" onclick="transitionToPage('fruit.html')" alt="..."/>
+        </div>
+        <div class="right">
+          <img id="image-link" src="./assets/AB.png" onclick="transitionToPage('hotsauce.html')" alt="..."/>
+        </div>
       </div>
 
-      <div class="grid-container">
-        <span id="image-link" class="left" onclick="transitionToPage('cactus.html')">
-          <h1 id="item-1">Goal & Value</h1>
-          <br>
-          The goal of this application is to provide a shopping interface for Brown Dining Services (BDS).
-          <br>
-        </span>
-        <span id="image-link" class="right" onclick="transitionToPage('instant.html')">
-          <h1 id="item-1">Goal & Value</h1>
-          <br>
-          The goal of this application is to provide a shopping interface for Brown Dining Services (BDS).
-          <br>
-        </span>
-      </div>
-
-      <section id="jumbo-link" class="jumbotron digital rounded-0 text-center" onclick="transitionToPage('art.html')">
+      <section id="jumbo-link" class="jumbotron clay rounded-0 text-center" onclick="transitionToPage('art.html')">
         <div class="container">
           <br>
           <br>

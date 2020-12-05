@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://use.typekit.net/xtn1kvy.css">
     <link rel="stylesheet" href="portfolio.css">
 
-    <title>Helen Zhang ♡ Contact</title>
+    <link rel="icon" type="image/png" href="./assets/favicomatic/favicon-32x32.png" sizes="32x32" />
+
+    <title>♡ Contact</title>
 
 
   </head>
@@ -29,8 +31,6 @@
               <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('hotplate.html')">hotplate</span>
               <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('fruit.html')">fruit</span>
               <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('hotsauce.html')">hotsauce</span>
-              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('cactus.html')">cactus</span>
-              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('instant.html')">instant</span>
             </div>
           </li>
           <li class="nav-item dropdown mx-3">
@@ -50,7 +50,7 @@
                 about
               </span>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a id="dropdown-item" class="dropdown-item" href="./resume.pdf">resume</a>
+                <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('./resume.pdf')">resume</span>
                 <span id="dropdown-item" class="dropdown-item active-dropdown">contact</span>
               </div>
           </li>
@@ -67,7 +67,7 @@
           <br>
           <br>
           <br>
-            <h0 class="underlined underlined--thick">Contact</h0>
+            <h0n class="nounder">Contact</h0n>
             <br>
             <br>
             <br>
@@ -77,110 +77,36 @@
       </section>
 
       <div id="container" class="container-fluid">
-        <form
-          action="https://formspree.io/f/mzbkvnna"
-          method="POST">
-          <label>
-            E-Mail:
-            <input type="text" name="_replyto">
-          </label>
-          <label>
-            Your message:
-            <textarea name="message"></textarea>
-          </label>
 
-          <!-- your other form fields go here -->
+        <form id="form" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mzbkvnna" method="post">
+          <fieldset id="fs-frm-inputs">
+            <label for="full-name">Full Name</label>
+            <br>
+            <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
+            <br>
+            <label for="email-address">Email Address</label>
+            <br>
+            <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
+            <br>
+            <label for="message">Message</label>
+            <br>
+            <textarea rows="5" name="message" id="message" placeholder="Type message here!" required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          </fieldset>
+          <br>
+          <input type="submit" value="Submit">
 
-          <button type="submit">Send</button>
         </form>
+        <br>
+        <br>
+        <!-- <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="helenzhang28"><a class="LI-simple-link" href='https://www.linkedin.com/in/helenzhang28?trk=profile-badge'>Helen Zhang</a></div>
+        <br>
+        <br> -->
       </div>
 
-
-
-      <div id="item-2" class="container-fluid small-container"></div>
-      <div id="container" class="container-fluid">
-        <br>
-        <h2 id="Lofi-title">Design</h2>
-        <br>
-        <h3>Components:</h3>
-        <ul>
-          <li>Location Filter</li>
-            <ol>
-              <li>Andrews</li>
-              <li>Ivy Room</li>
-              <li>Jo's (or Jos?)</li>
-              <li>Ratty</li>
-              <li>VDub</li>
-            </ol>
-          <li>Meal Filter</li>
-            <ol>
-              <li>Breakfast</li>
-              <li>Lunch</li>
-              <li>Dinner</li>
-            </ol>
-          <li>Sort</li>
-            <ol>
-              <li>Random</li>
-              <li>Price Low to High</li>
-              <li>Price High to Low</li>
-            </ol>
-          <li>Combineable filters and sorting</li>
-          <li>Item Cards</li>
-            <ol>
-              <li>Item Illustration</li>
-              <li>Location</li>
-              <li>Meal</li>
-              <li>Price</li>
-              <li>Add to Cart Button (can be clicked multiple times)</li>
-            </ol>
-          <li>Cart Aggregator</li>
-            <ol>
-              <li>Displays card for each added item</li>
-              <li>Remove (if > 1) and add items</li>
-              <li>Remove item completely from cart</li>
-              <li>Sums total price- updated with any interaction</li>
-              <li>Clear entire cart</li>
-            </ol>
-        </ul>
-        <br>
-        <h3 id="item-2-1">Usability Principles</h3>
-        <ul>
-          <li>Logical page setup</li>
-          <li>Page is responsive</li>
-          <li>Indicators for what settings are selected</li>
-          <li>Text indicates if no items fit parameters or if cart is empty</li>
-          <li>Buttons respond to hover</li>
-          <li>Colors chosen for adequate contrast</li>
-          <li>Distinct item cards</li>
-          <li>Padding and margins to keep content within high visibility region</li>
-        </ul>
-        <br>
-        <br>
-      </div>
-
-      <div id="item-4" class="container-fluid small-container"></div>
-      <div id="container" class="container-fluid">
-        <br>
-        <h2>Website</h2>
-        <br>
-          <a href="https://github.com/helenzhang8/Development" id="button" class="btn btn-info" role="button">Github Repository</a>
-        <br>
-        <br>
-          <a href="https://browndiningservices.herokuapp.com" id="button" class="btn btn-info" role="button">Development Website</a>
-        <br>
-        <br>
-        <br>
-        <iframe id="inlineFrameExample"
-          title="Inline Frame Example"
-          width="95%"
-          height="1000px"
-          src="https://browndiningservices.herokuapp.com">
-        </iframe>
-      </div>
-
-      <div id="footer" class="container-fluid footer-container"></div>
     </main>
 
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 <script>
   document.querySelector('body').style.opacity = 1
   window.addEventListener( "pageshow", function ( event ) {

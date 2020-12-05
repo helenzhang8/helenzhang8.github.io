@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/xtn1kvy.css">
     <link rel="stylesheet" href="portfolio.css">
 
-    <title>Helen Zhang ♡</title>
+    <link rel="icon" type="image/png" href="./assets/favicomatic/favicon-32x32.png" sizes="32x32" />
+    <title>♡ About</title>
 
 
   </head>
@@ -29,8 +30,6 @@
               <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('hotplate.html')">hotplate</span>
               <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('fruit.html')">fruit</span>
               <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('hotsauce.html')">hotsauce</span>
-              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('cactus.html')">cactus</span>
-              <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('instant.html')">instant</span>
             </div>
           </li>
           <li class="nav-item dropdown mx-3">
@@ -50,7 +49,7 @@
                 about
               </span>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('resume.html')">resume</span>
+                <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('./resume.pdf')">resume</span>
                 <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('contact.html')">contact</span>
               </div>
           </li>
@@ -67,7 +66,7 @@
           <br>
           <br>
           <br>
-            <h0 class="underlined underlined--thick">About</h0>
+            <h0n class="nounder">About</h0n>
             <br>
             <br>
             <br>
@@ -77,7 +76,6 @@
       </section>
 
       <div id="container" class="container-fluid">
-        <h1 id="item-1">Goal & Value</h1>
           <br>
           The goal of this application is to provide a shopping interface for Brown Dining Services (BDS).
           <br>
@@ -97,85 +95,36 @@
         <br>
       </div>
 
+      <section id="jumbo-link" class="jumbotron about rounded-0 text-center" onclick="transitionToPage('./resume.pdf')">
+        <div class="container">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h0 class="underlined underlined--thick">Resume</h0>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+      </section>
 
+      <section id="jumbo-link" class="jumbotron about rounded-0 text-center" onclick="transitionToPage('contact.html')">
+        <div class="container">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h0 class="underlined underlined--thick">Contact</h0>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+      </section>
 
-      <div id="item-2" class="container-fluid small-container"></div>
-      <div id="container" class="container-fluid">
-        <br>
-        <h2 id="Lofi-title">Design</h2>
-        <br>
-        <h3>Components:</h3>
-        <ul>
-          <li>Location Filter</li>
-            <ol>
-              <li>Andrews</li>
-              <li>Ivy Room</li>
-              <li>Jo's (or Jos?)</li>
-              <li>Ratty</li>
-              <li>VDub</li>
-            </ol>
-          <li>Meal Filter</li>
-            <ol>
-              <li>Breakfast</li>
-              <li>Lunch</li>
-              <li>Dinner</li>
-            </ol>
-          <li>Sort</li>
-            <ol>
-              <li>Random</li>
-              <li>Price Low to High</li>
-              <li>Price High to Low</li>
-            </ol>
-          <li>Combineable filters and sorting</li>
-          <li>Item Cards</li>
-            <ol>
-              <li>Item Illustration</li>
-              <li>Location</li>
-              <li>Meal</li>
-              <li>Price</li>
-              <li>Add to Cart Button (can be clicked multiple times)</li>
-            </ol>
-          <li>Cart Aggregator</li>
-            <ol>
-              <li>Displays card for each added item</li>
-              <li>Remove (if > 1) and add items</li>
-              <li>Remove item completely from cart</li>
-              <li>Sums total price- updated with any interaction</li>
-              <li>Clear entire cart</li>
-            </ol>
-        </ul>
-        <br>
-        <h3 id="item-2-1">Usability Principles</h3>
-        <ul>
-          <li>Logical page setup</li>
-          <li>Page is responsive</li>
-          <li>Indicators for what settings are selected</li>
-          <li>Text indicates if no items fit parameters or if cart is empty</li>
-          <li>Buttons respond to hover</li>
-          <li>Colors chosen for adequate contrast</li>
-          <li>Distinct item cards</li>
-          <li>Padding and margins to keep content within high visibility region</li>
-        </ul>
-        <br>
-        <br>
-      </div>
-
-      <div id="item-4" class="container-fluid small-container"></div>
-      <div id="container" class="container-fluid">
-        <br>
-        <h2>Website</h2>
-        <br>
-          <a href="https://github.com/helenzhang8/Development" id="button" class="btn btn-info" role="button">Github Repository</a>
-        <br>
-        <br>
-          <a href="https://browndiningservices.herokuapp.com" id="button" class="btn btn-info" role="button">Development Website</a>
-        <br>
-        <br>
-        <iframe src="https://open.spotify.com/embed/playlist/5kH8Fjc7ITWpROfjNzJIGi" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <br>
-      </div>
-
-      <div id="footer" class="container-fluid footer-container"></div>
     </main>
 
 <script>
