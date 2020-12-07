@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="portfolio.css">
 
     <link rel="icon" type="image/png" href="./assets/favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>♡ Paper</title>
 
 
@@ -50,7 +51,6 @@
               </span>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a id="dropdown-item" class="dropdown-item" href="./resume.pdf">resume</a>
-                <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('contact.html')">contact</span>
               </div>
           </li>
         </ul>
@@ -58,22 +58,9 @@
     </nav>
 
     <main>
-      <section id="jumbotron" class="jumbotron paper rounded-0 text-center">
-        <div class="container">
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-            <h0n class="nounder">Paper</h0n>
-            <br>
-            <br>
-            <br>
-            <br>
-            <!-- <img src="./assets/Title.png" width="85%"/> -->
-        </div>
-      </section>
+      <br>
+      <img src="./assets/paper.png" style="background-size: cover"/>
+
       <div id="gen-container">
       <div id="myModal" class="modal">
         <!-- Modal Content (The Image) -->
@@ -86,7 +73,7 @@
         <p>These pieces are all cut using an x-acto knife. I made these while in Boston during the summer of 2019. Since then, I have obtained a Cricut
       which has made these somewhat obsolete.</p>
       </div>
-      <div class="grid-container">
+      <div class="grid-container" data-aos="fade-up" aos-duration="800">
 
         <div class="left">
           <img class="myImages" src="./assets/Paper/Coffee.jpg" alt="Coffee inspired paper art"/>
@@ -95,7 +82,7 @@
           <img class="myImages" src="./assets/Paper/Strawberry.jpg" alt="Strawberry cafe paper art"/>
         </div>
       </div>
-      <div class="grid-container">
+      <div class="grid-container" data-aos="fade-up" aos-duration="800">
         <div class="left">
           <img class="myImages" src="./assets/Paper/water.jpg" alt="Water lettering paper art."/>
         </div>
@@ -103,7 +90,7 @@
           <img class="myImages" src="./assets/Paper/bed.jpg" alt="Handcut bedroom art."/>
         </div>
       </div>
-      <div class="grid-container">
+      <div class="grid-container" data-aos="fade-up" aos-duration="800">
         <div class="left">
           <img class="myImages" src="./assets/Paper/boston.jpg" alt="Paper art made while in Boston over the summer."/>
         </div>
@@ -111,7 +98,7 @@
           <img class="myImages" src="./assets/Paper/beach.jpg" alt="Summer paper art design."/>
         </div>
       </div>
-      <div class="grid-container">
+      <div class="grid-container" data-aos="fade-up" aos-duration="800">
         <div class="left">
           <img class="myImages" src="./assets/Paper/gudetama.jpg" alt="Gudetama paperart."/>
         </div>
@@ -119,7 +106,7 @@
           <img class="myImages" src="./assets/Paper/Pocly.jpg" alt="Pocky-themed paper art."/>
         </div>
       </div>
-      <div class="grid-container">
+      <div class="grid-container" data-aos="fade-up" aos-duration="800">
         <div class="left">
           <img class="myImages" src="./assets/Paper/totoro.jpg" alt="Paper art inspired by a Totoro notebook."/>
         </div>
@@ -168,7 +155,10 @@
       modal.style.display = "none";
 }
   </script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       window.transitionToPage = function(href) {
       document.querySelector('body').style.opacity = 0

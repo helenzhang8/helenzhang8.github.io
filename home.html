@@ -50,7 +50,6 @@
               </span>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('./resume.pdf')">resume</span>
-                <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('contact.html')">contact</span>
               </div>
           </li>
         </ul>
@@ -58,55 +57,6 @@
     </nav>
 
     <main>
-      <section id="jumbotron" class="jumbotron home rounded-0 text-center">
-        <div class="container">
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <h0 class="underlined underlined--thick">My Name</h0>
-          <br>
-          <br>
-          <br>
-          <br>
-            <!-- <img src="./assets/Title.png" width="85%"/> -->
-        </div>
-      </section>
-
-      <div class="grid-container">
-        <div class="left">
-          <img id="image-link" src="./assets/AB.png" onclick="transitionToPage('brown.html')" alt="..."/>
-        </div>
-        <div class="right">
-          <img id="image-link" src="./assets/AB.png" onclick="transitionToPage('hotplate.html')" alt="..."/>
-        </div>
-      </div>
-
-      <div class="grid-container">
-        <div class="left">
-          <img id="image-link" src="./assets/AB.png" onclick="transitionToPage('fruit.html')" alt="..."/>
-        </div>
-        <div class="right">
-          <img id="image-link" src="./assets/AB.png" onclick="transitionToPage('hotsauce.html')" alt="..."/>
-        </div>
-      </div>
-
-      <section id="jumbo-link" class="jumbotron clay rounded-0 text-center" onclick="transitionToPage('art.html')">
-        <div class="container">
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <h0 class="underlined underlined--thick">Art</h0>
-          <br>
-          <br>
-          <br>
-          <br>
-        </div>
-      </section>
-
       <section id="jumbo-link" class="jumbotron about rounded-0 text-center" onclick="transitionToPage('about.html')">
         <div class="container">
           <br>
@@ -114,13 +64,48 @@
           <br>
           <br>
           <br>
-          <h0 class="underlined underlined--thick">About</h0>
+          <h0 class="underlined underlined--thick">Hi, my name is !</h0>
           <br>
           <br>
           <br>
           <br>
         </div>
       </section>
+      <div class="grid-container">
+        <div class="left">
+          <div class="image_container">
+          <img src="./assets/Home/brown3.png" onclick="transitionToPage('brown.html')" alt="..."/>
+          <div class="overlay" onclick="transitionToPage('brown.html')"></div>
+            <div class="text">brown dining services</div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="image_container">
+          <img src="./assets/Home/plate1.png" alt="..."/>
+          <div class="overlay" onclick="transitionToPage('hotplate.html')"></div>
+            <div class="text">hotplate</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="left">
+          <div class="image_container">
+          <img src="./assets/Home/fruit1.png" alt="..."/>
+          <div class="overlay" onclick="transitionToPage('fruit.html')"></div>
+            <div class="text">fruit makes me emotional</div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="image_container">
+          <img src="./assets/Home/hot4.png" alt="..."/>
+          <div class="overlay" onclick="transitionToPage('hotsauce.html')"></div>
+            <div class="text">hotsauce.com</div>
+          </div>
+        </div>
+      </div>
+
+      <br>
     </main>
 
 <script>

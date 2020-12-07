@@ -64,10 +64,10 @@ h0n {
   font-style: normal;
   letter-spacing: 2px;
   word-spacing: 2px;
-  color: black;
+  color: white;
   font-weight: 400;
   text-align: center;
-  background-color: white;
+  background-color: transparent;
   background-size: 100% 100%;
 }
 
@@ -134,14 +134,6 @@ ol {
   display: flex;
 }
 
-.jumbotron1{
-  position: relative;
-  background-size: cover;
-  margin: 30px;
-  margin-bottom: 20px;
-  display: flex;
-}
-
 .home{
   background: url("./assets/sky.gif") center;
 }
@@ -165,7 +157,6 @@ ol {
 .social {
   background: url("./assets/Kick.png") center;
 }
-
 
 .about {
   background: url("./assets/About.png") center;
@@ -205,8 +196,8 @@ ol {
 }
 
 .small-container{
-  background-size: cover;
-  height: 20px;
+  background-color: white;
+  height: 25px;
 }
 .blank-container{
   background-color: #f9f9f9;
@@ -278,17 +269,17 @@ ol {
 /* Style the left column */
 .left {
   grid-area: left;
-  margin-right: 7.5px;
-  margin-top: 7.5px;
-  margin-bottom: 7.5px;
+  margin-right: 3.5px;
+  margin-top: 5.5px;
+  margin-bottom: 5.5px;
   margin-left: 20px;
 }
 /* Style the right column */
 .right {
   grid-area: right;
-  margin-left: 7.5px;
-  margin-top: 7.5px;
-  margin-bottom: 7.5px;
+  margin-left: 3.5px;
+  margin-top: 5.5px;
+  margin-bottom: 5.5px;
   margin-right: 20px;
 }
 
@@ -458,7 +449,18 @@ img {
   transition: 0.5s;
 }
 
-.myImages:hover {opacity: 0.7;}
+.image_container {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#image-link {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.myImages:hover {opacity: 0.5;}
+#jumbo-link:hover {opacity: 0.9;}
 
 /* The Modal (background) */
 .modal {
@@ -544,4 +546,45 @@ img {
 
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF6347' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+
+.image_container {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 2.5%;
+  bottom: 2.5%;
+  left: 2.5%;
+  right: 2.5%;
+  height: 95%;
+  width: 95%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.image_container:hover .overlay {
+  opacity: .5;
+}
+
+.image_container:hover .text {
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .5s ease;
+  text-align: center;
 }

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="portfolio.css">
 
     <link rel="icon" type="image/png" href="./assets/favicomatic/favicon-32x32.png" sizes="32x32" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>♡ Art</title>
 
 
@@ -50,14 +50,13 @@
               </span>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a id="dropdown-item" class="dropdown-item" href="./resume.pdf">resume</a>
-                <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('contact.html')">contact</span>
               </div>
           </li>
         </ul>
       </div>
     </nav>
     <main>
-      <section id="jumbo-link" class="jumbotron digital rounded-0 text-center" onclick="transitionToPage('digital.html')">
+      <section id="jumbo-link" class="jumbotron digital rounded-0 text-center" onclick="transitionToPage('digital.html')" data-aos="fade-up" aos-duration="800">
         <div class="container">
           <br>
           <br>
@@ -72,7 +71,7 @@
         </div>
       </section>
 
-      <section id="jumbo-link" class="jumbotron lettering rounded-0 text-center" onclick="transitionToPage('lettering.html')">
+      <section id="jumbo-link" class="jumbotron lettering rounded-0 text-center" onclick="transitionToPage('lettering.html')" data-aos="fade-up" aos-duration="800">
         <div class="container">
           <br>
           <br>
@@ -87,7 +86,7 @@
         </div>
       </section>
 
-      <section id="jumbo-link" class="jumbotron social rounded-0 text-center" onclick="transitionToPage('social.html')">
+      <section id="jumbo-link" class="jumbotron social rounded-0 text-center" onclick="transitionToPage('social.html')" data-aos="fade-up" aos-duration="800">
         <div class="container">
           <br>
           <br>
@@ -102,7 +101,7 @@
         </div>
       </section>
 
-      <section id="jumbo-link" class="jumbotron paper rounded-0 text-center" onclick="transitionToPage('paper.html')">
+      <section id="jumbo-link" class="jumbotron paper rounded-0 text-center" onclick="transitionToPage('paper.html')" data-aos="fade-up" aos-duration="800">
         <div class="container">
           <br>
           <br>
@@ -117,7 +116,7 @@
         </div>
       </section>
 
-      <section id="jumbo-link" class="jumbotron clay rounded-0 text-center" onclick="transitionToPage('clay.html')">
+      <section id="jumbo-link" class="jumbotron clay rounded-0 text-center" onclick="transitionToPage('clay.html')" data-aos="fade-up" aos-duration="800">
         <div class="container">
           <br>
           <br>
@@ -146,7 +145,10 @@ window.location.reload();
 }
 });
 </script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 <script>
   window.transitionToPage = function(href) {
   document.querySelector('body').style.opacity = 0

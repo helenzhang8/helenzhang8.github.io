@@ -50,7 +50,6 @@
               </span>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('./resume.pdf')">resume</span>
-                <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('contact.html')">contact</span>
               </div>
           </li>
         </ul>
@@ -58,22 +57,9 @@
     </nav>
 
     <main>
-      <section id="jumbotron" class="jumbotron brown text-center">
-        <div class="container">
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-            <h0n class="nounder">Brown Dining Services</h0n>
-            <br>
-            <br>
-            <br>
-            <br>
-            <!-- <img src="./assets/Title.png" width="85%"/> -->
-        </div>
-      </section>
+      <br>
+      <img src="./assets/brown.png" style="background-size: cover"/>
+
 
       <div id="myModal" class="modal">
         <!-- Modal Content (The Image) -->
@@ -83,57 +69,47 @@
       </div>
 
       <div id="container" class="container-fluid">
-          <br>
-          The goal of this project, "Development", was to use React to create a list website that would
-          aggregate some value for the list items. I decided to create a shopping interface for Brown Dining Services (BDS).
+        <img class="myImages" src="./assets/Development/Ex3.png" alt="My interactive Brown Dining Services shopping interface, created using React."/>
           <br>
           <br>
-          I was inspired by Brown's very specific, sometimes underwhelming dining options. Despite having been away from
-          campus for so long, these foods remain very clear in my mind- during quarantine, my friends and I
-          had a very spirited argument over a Brown Dining Options Tier List (my personal ranking is below). It seems
-          that people are really passionate about food at Brown.
+          Using <b>React</b>, I created a <b>list website</b> that would
+          aggregate some value- I decided to create a shopping interface for Brown Dining Services (BDS).
           <br>
           <br>
-          <img class="myImages" src="./assets/Draw.jpeg" alt="Brown Dining Offerings"/>
-          <img class="myImages" src="./assets/Tier.png" alt="Brown Dining Options Tier List"/>
+          I was inspired by Brown's dining options. During quarantine, my friends and I
+          had a spirited argument trying to rank them.
           <br>
           <br>
-          Currently, BDS has a website that lists the dining hall options. However, this operates solely as a menu. My website aims to
+          <div class="grid-container">
+            <div class="left">
+              <img class="myImages" src="./assets/Draw.jpeg" alt="Brown Dining Offerings"/>
+            </div>
+            <div class="right">
+              <img class="myImages" src="./assets/Tier.png" alt="Brown Dining Options Tier List (my personal opinions!)"/>
+            </div>
+          </div>
+
+
+          <br>
+          <br>
+          My website aims to
           provide a way for students to view and order their food, which may not require as much in-person interaction.
           <br>
-          <br>
-          This is also a good tool for meal planning, as typically there is only a short description given for each item. This website allows
-          students to get a better idea of offerings that are available and plan out what they would like to eat. This is a general marketplace app,
-          not taking into consideration all-you-can-eat or point systems. It provides an estimation of the real-world prices of Brown's offerings.
-          <br>
-          <br>
-          For students who are not on campus (like myself), this is a fun interface to provide them with some familiarity.
-          Students may be missing Brown's dining options, so this is an interactive way to reminisce upon better times.
           <br>
         <br>
       </div>
 
-      <div id="item-2" class="container-fluid brown small-container"></div>
+      <div id="item-2" class="container-fluid small-container"></div>
       <div id="container" class="container-fluid">
         <br>
         <h2 id="Lofi-title">Design</h2>
+
         <br>
-        <h3>Components</h3>
-        <br>
-        <p>The project required filter and sorting functions. I implemented a Location filter (Andrew,
-          Ivy Room, Jo's, Ratty, VDub) and Meal filter (Breakfast, Lunch, Dinner). I also enabled sorting by ascending and
-        descending price.</p>
+        <p>The project required filter and sorting functions. I implemented a Location and Meal filter. I also enabled sorting by price.</p>
         <img class="myImages" src="./assets/Top.png" alt="Heading and Filter/Sorting Options"/>
         <br>
         <br>
-        I created an Item Card for each item. Each card displays an illustration, location, meal, and price,
-        followed by an Add to Cart button.
-        <br>
-        <br>
-        The last component is the aggregator- in this case, a cart. The cart contains each added item, with the option to add/remove
-        a unit, as well as remove an item entirely. There is also an option to clear the entire cart. The total sum is displayed at the bottom.
-        <br>
-        <br>
+
         <h3>Code Overview</h3>
         <br>
         <img class="myImages" src="./assets/Development/Code.png" alt="Snippet from README describing components/files used."/>
@@ -152,16 +128,13 @@
           <li>Padding and margins to keep content within high visibility region</li>
         </ul>
         <br>
-        <br>
       </div>
 
-      <div id="item-3" class="container-fluid brown small-container"></div>
+      <div id="item-3" class="container-fluid small-container"></div>
       <div id="container" class="container-fluid">
         <br>
         <h2>Item Illustrations</h2>
-        <p>I used Procreate to create illustrations for each item available for purchase. These are
-        relatively minimalistic but I tried to include key details, like the snap peas in the
-      Ratty miso bowl and the unchopped Jo's salad.</p>
+        <p>I used Procreate to create illustrations for each item available for purchase.</p>
         <div class="carousel container container-fluid">
         <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" width="100%">
           <ol class="carousel-indicators">
@@ -397,17 +370,22 @@
       </div>
       </div>
 
-      <div id="item-4" class="container-fluid brown small-container"></div>
+      <div id="item-4" class="container-fluid small-container"></div>
       <div id="container" class="container-fluid">
         <br>
         <h2>Website</h2>
         <br>
         <p> These are some example stills of the website.
         </p>
-        <img class="myImages" src="./assets/Development/Ex3.png" alt="Initial state."/>
-        <img class="myImages" src="./assets/Development/Ex1.png" alt="Website with filters and sorting applied."/>
-        <img class="myImages" src="./assets/Development/Ex2.png" alt="My example cart."/>
-        <br>
+        <div class="grid-container">
+          <div class="left">
+            <img class="myImages" src="./assets/Development/Ex1.png" alt="Website with filters and sorting applied."/>
+          </div>
+          <div class="right">
+            <img class="myImages" src="./assets/Development/Ex2.png" alt="My example cart."/>
+          </div>
+        </div>
+
         <br>
         <p> View the website (and corresponding code) below.</p>
           <a href="https://browndiningservices.herokuapp.com" id="button" class="btn btn-info" role="button">Development Website</a>
@@ -418,18 +396,16 @@
         <br>
       </div>
 
-      <div id="item-4" class="container-fluid brown small-container"></div>
+      <div id="item-4" class="container-fluid small-container"></div>
       <div id="container" class="container-fluid">
         <br>
         <h2>Conclusion</h2>
         <br>
-        <p>After getting used to React, making this website was really enjoyable. There are so many possibilities,
-          which makes it a really useful tool. The HTML for this project only contained one element, so I think experimenting more
+        <p>After getting used to React, making this website was really enjoyable. The HTML for this project only contained one element, so I think experimenting more
           with using HTML and React would be helpful in the future.
           <br>
-          I also had so much fun designing the website- it wouldn't really be
-          feasible in reality, but I do think it has some promising ideas. It's definitely something that doesn't
-          exist at this moment. I enjoyed "ordering food", and am excited to learn more of what's possible with React.
+          <br>
+          I also had so much fun designing the website. I enjoyed "ordering food", and am excited to learn more of what's possible with React.
 
         </p>
         <br>

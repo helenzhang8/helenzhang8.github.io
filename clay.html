@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="portfolio.css">
 
     <link rel="icon" type="image/png" href="./assets/favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>♡ Clay</title>
 
 
@@ -50,7 +51,6 @@
               </span>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a id="dropdown-item" class="dropdown-item" href="./resume.pdf">resume</a>
-                <span id="dropdown-item" class="dropdown-item" onclick="transitionToPage('contact.html')">contact</span>
               </div>
           </li>
         </ul>
@@ -58,25 +58,9 @@
     </nav>
 
     <main>
+      <br>
+      <img src="./assets/clay.png" style="background-size: cover"/>
 
-      <section id="jumbotron" class="jumbotron clay rounded-0 text-center">
-        <div class="container">
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-            <h0n class="nounder">Clay</h0n>
-            <br>
-            <br>
-            <br>
-            <br>
-            <!-- <img src="./assets/Title.png" width="85%"/> -->
-        </div>
-
-
-      </section>
       <div id="gen-container">
         <div class="container">
           <br>
@@ -100,7 +84,7 @@
         <div id="caption"></div>
       </div>
 
-      <div class="grid-container">
+      <div class="grid-container" data-aos="fade-up" aos-duration="800">
         <div class="left">
           <img class="myImages" src="./assets/Clay/IMG_1380.PNG" alt="Assorted Foods"/>
         </div>
@@ -108,7 +92,7 @@
           <img class="myImages" src="./assets/Clay/IMG_2570.JPG" alt="Blueno"/>
         </div>
       </div>
-      <div class="grid-container">
+      <div class="grid-container" data-aos="fade-up" aos-duration="800">
         <div class="left">
           <img class="myImages" src="./assets/Clay/IMG_2358.png" alt="Miscellaneous Objects"/>
         </div>
@@ -116,7 +100,7 @@
           <img class="myImages" src="./assets/Clay/IMG_2567.JPG" alt="Orange Earrings"/>
         </div>
       </div>
-      <div class="grid-container">
+      <div class="grid-container" data-aos="fade-up" aos-duration="800">
         <div class="left">
           <img class="myImages" src="./assets/Clay/Untitled_Artwork 17.png" alt="Onigiri Plates and Mountain Knife Stand"/>
         </div>
@@ -124,7 +108,7 @@
           <img class="myImages" src="./assets/Clay/IMG_2565.JPG" alt="French Cheeto Tiger and Chair"/>
         </div>
       </div>
-      <div class="grid-container">
+      <div class="grid-container" data-aos="fade-up" aos-duration="800">
         <div class="left">
           <img class="myImages" src="./assets/Clay/IMG_2563.JPG" alt="Smoko Dumpling Pillow"/>
         </div>
@@ -132,7 +116,7 @@
           <img class="myImages" src="./assets/Clay/Untitled_Artwork 15.png" alt="Apeach"/>
         </div>
       </div>
-      <div class="grid-container">
+      <div class="grid-container" data-aos="fade-up" aos-duration="800">
         <div class="left">
           <img class="myImages" src="./assets/Clay/Untitled_Artwork 13.png" alt="Mamegoma Collection"/>
         </div>
@@ -140,7 +124,7 @@
           <img class="myImages" src="./assets/Clay/Untitled_Artwork 16.png" alt="Strawberry Mamegoma"/>
         </div>
       </div>
-      <div class="grid-container">
+      <div class="grid-container" data-aos="fade-up" aos-duration="800">
         <div class="left">
           <img class="myImages" src="./assets/Clay/Untitled_Artwork 1.png" alt="Duck Mamegoma"/>
         </div>
@@ -148,7 +132,7 @@
           <img class="myImages" src="./assets/Clay/Untitled_Artwork 12.png" alt="Plain Mamegoma"/>
         </div>
       </div>
-      <div class="grid-container">
+      <div class="grid-container" data-aos="fade-up" aos-duration="800">
         <div class="left">
           <img class="myImages" src="./assets/Clay/Untitled_Artwork 11.png" alt="Maid Mamegoma"/>
         </div>
@@ -201,13 +185,17 @@
       document.querySelector('body').style.opacity = 0
       setTimeout(function() {
           window.location.href = href
-      }, 500)
+      }, 800)
       }
       document.addEventListener('DOMContentLoaded', function(event) {
 
       }
       )
     </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
