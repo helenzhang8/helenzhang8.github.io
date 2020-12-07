@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="portfolio.css">
 
     <link rel="icon" type="image/png" href="./assets/favicomatic/favicon-32x32.png" sizes="32x32" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>♡ Art</title>
 
 
@@ -56,7 +55,7 @@
       </div>
     </nav>
     <main>
-      <section id="jumbo-link" class="jumbotron digital rounded-0 text-center" onclick="transitionToPage('digital.html')" data-aos="fade-up" aos-duration="800">
+      <section id="jumbo-link" class="jumbotron digital rounded-0 text-center" onclick="transitionToPage('digital.html')">
         <div class="container">
           <br>
           <br>
@@ -71,7 +70,7 @@
         </div>
       </section>
 
-      <section id="jumbo-link" class="jumbotron lettering rounded-0 text-center" onclick="transitionToPage('lettering.html')" data-aos="fade-up" aos-duration="800">
+      <section id="jumbo-link" class="jumbotron lettering rounded-0 text-center" onclick="transitionToPage('lettering.html')">
         <div class="container">
           <br>
           <br>
@@ -86,7 +85,7 @@
         </div>
       </section>
 
-      <section id="jumbo-link" class="jumbotron social rounded-0 text-center" onclick="transitionToPage('social.html')" data-aos="fade-up" aos-duration="800">
+      <section id="jumbo-link" class="jumbotron social rounded-0 text-center" onclick="transitionToPage('social.html')">
         <div class="container">
           <br>
           <br>
@@ -101,7 +100,7 @@
         </div>
       </section>
 
-      <section id="jumbo-link" class="jumbotron paper rounded-0 text-center" onclick="transitionToPage('paper.html')" data-aos="fade-up" aos-duration="800">
+      <section id="jumbo-link" class="jumbotron about rounded-0 text-center" onclick="transitionToPage('paper.html')">
         <div class="container">
           <br>
           <br>
@@ -116,7 +115,7 @@
         </div>
       </section>
 
-      <section id="jumbo-link" class="jumbotron clay rounded-0 text-center" onclick="transitionToPage('clay.html')" data-aos="fade-up" aos-duration="800">
+      <section id="jumbo-link" class="jumbotron clay rounded-0 text-center" onclick="transitionToPage('clay.html')">
         <div class="container">
           <br>
           <br>
@@ -145,10 +144,7 @@ window.location.reload();
 }
 });
 </script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+
 <script>
   window.transitionToPage = function(href) {
   document.querySelector('body').style.opacity = 0

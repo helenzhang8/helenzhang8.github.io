@@ -18,6 +18,9 @@ body {
   justify-content: center;
 }
 
+b {
+  color: #bf0603;
+}
 main {
   overflow-x: hidden;
   flex-wrap: wrap;
@@ -566,7 +569,7 @@ img {
 }
 
 .image_container:hover .overlay {
-  opacity: .5;
+  opacity: .75;
 }
 
 .image_container:hover .text {
