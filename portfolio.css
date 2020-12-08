@@ -113,11 +113,10 @@ h8 {
 
 ul {
   list-style-position: inside;
-  text-align: center;
+  text-align: left;
   list-style-type: square;
 }
 ol {
-  padding-left: 10%;
   list-style-position: inside;
   text-align: left;
 }
@@ -534,8 +533,9 @@ img {
 }
 
 .carousel > .carousel-inner > .carousel-item img{
-  height: 600px;
+  max-height: 800px;
   width: auto;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -546,7 +546,17 @@ img {
 
 .carousel-item {
   justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+
 }
+
+iframe {
+  justify-content: center;
+  max-width: 100%;
+}
+
 .carousel-control-prev-icon {
  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF6347' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
  z-index: -1;
@@ -589,6 +599,26 @@ img {
   position: absolute;
   top: 20%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .5s ease;
+  text-align: center;
+}
+
+.image_container:hover .textsmall {
+  opacity: 1;
+  top: 50%;
+  left: 30%;
+}
+
+.textsmall {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
